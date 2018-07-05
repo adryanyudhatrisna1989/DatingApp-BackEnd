@@ -1,3 +1,20 @@
-# DatingApp Application
+# DatingApp
 
-### This application for the backend I'm using ASPNET Core, and for the front end I'm using Angular 5.
+### This is the back-end for the application. I use ASPNET Core
+
+### Code Example
+
+```c#
+namespace DatingApp.API {
+    public class Program {
+        public static void Main (string[] args) {
+            BuildWebHost (args).Run ();
+        }
+
+        public static IWebHost BuildWebHost (string[] args) =>
+            WebHost.CreateDefaultBuilder (args)
+            .UseStartup<Startup> ()
+            .Build ();
+    }
+}
+```
