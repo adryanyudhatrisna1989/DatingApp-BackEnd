@@ -10,7 +10,7 @@ namespace DatingApp.API.Data {
             _context = context;
         }
 
-        public void SeeUsers () {
+        public void SeedUsers () {
             // _context.Users.RemoveRange(_context.Users);
             // _context.SaveChanges();
 
